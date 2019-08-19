@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mini Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Train Information</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">LogOut</string>
+    <string name="enter_trainno">Enter Train Number</string>
+    <string name="enter">Enter</string>
+    <string name="login">LogIn</string>
+    <string name="logout">LogOut</string>
+    <string name="trainarrivals">Trains in Station</string>
+    <string name="alreadyaccount">Already a member? Login</string>
+    <string name="email">Email</string>
+    <string name="createaccount">Create Account</string>
+    <string name="name">Name</string>
+    <string name="newaccount">No account yet? Create one</string>
+    <string name="password">Password</string>
+    <string name="trainroute">Train Route</string>
+    <string name="traindetails">Train Details</string>
+    <string name="pnrstatus">PNR Status</string>
+    <string name="trainsbetween">Trains Between Stations</string>
+    <string name="cancelledtrains">Cancelled Trains</string>
+    <string name="source">Source Station</string>
+    <string name="destination">Destination Station</string>
+    <string name="date">Date(DD-MM-YYYY)</string>
+    <string name="date1">Enter Date In Format(DD-MM-YYYY)</string>
+    <string name="pnr">Enter PNR Status</string>
+    <string name="check">Check</string>
+</resources>

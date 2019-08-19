@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_main"
+        tools:context=".MainActivity"
+>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="@string/source"
+    >
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/sourcestation"
+                  android:inputType="text"
+                  android:textAllCaps="true"
+                android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/destination">
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/deststaion"
+                  android:textSize="20sp"/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="0dp"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_weight="0.8" android:layout_height="wrap_content"
+                  android:id="@+id/choosendate"
+                  android:textSize="20sp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="8dp"
+                  android:text="@string/date"/>
+        <Button android:layout_width="20dp" android:layout_height="38dp"
+                android:layout_weight="0.2"
+                android:id="@+id/dateclick"
+                android:layout_margin="10dp"
+                android:onClick="selectdate"
+                android:background="@drawable/ic_date_range_black_24dp"/>
+    </LinearLayout>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/check"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="loadResultDate"/>
+    <ListView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/resultlistview"/>
+
+</LinearLayout>
+</ScrollView>
